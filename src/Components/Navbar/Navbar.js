@@ -1,8 +1,9 @@
 import React from "react";
 import logo from "./logo.svg";
-import "./Navbar.css";
+import {cartWidget} from "../CartWidget/cartWidget";
+import './Navbar.css';
 
-export const Navbar = () => {
+export const NavBar = () => {
   return (
     <div>
       <nav className="navbar navbar-light bg-light">
@@ -22,7 +23,7 @@ export const Navbar = () => {
               <a href="">Productos</a>
             </li>
             <li>
-              <a href="">Ofertas</a>
+                <cartWidget/>
             </li>
           </ul>
         </div>
