@@ -1,9 +1,9 @@
 import React from "react";
 import logo from "./logo.svg";
-import {cartWidget} from "../CartWidget/cartWidget";
+import CartWidget from "../CartWidget/CartWidget";
 import './Navbar.css';
 
-export const NavBar = () => {
+const NavBar = () => {
   return (
     <div>
       <nav className="navbar navbar-light bg-light">
@@ -23,7 +23,7 @@ export const NavBar = () => {
               <a href="">Productos</a>
             </li>
             <li>
-                <cartWidget/>
+                <CartWidget/>
             </li>
           </ul>
         </div>
@@ -31,3 +31,5 @@ export const NavBar = () => {
     </div>
   );
 };
+
+export default NavBar

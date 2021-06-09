@@ -1,11 +1,13 @@
 import React from 'react';
 import './shopping-cart-solid.svg';
-import './cartWidget.css'
+import './style.css'
 
-const cartWidget = () => {
+const CartWidget = () => {
     return (
-            <p>TEST</p>
+        <a href="#">
+            <i class="fas fa-shopping-cart cartIcon"></i>
+        </a>
     )
 }
 
-export default cartWidget
+export default CartWidget;
